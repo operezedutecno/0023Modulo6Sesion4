@@ -1,0 +1,26 @@
+{
+  "name": "0023Modulo6Sesion4",
+  "version": "1.0.0",
+  "description": "Práctica de Axios, Fs y Promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/operezedutecno/0023Modulo6Sesion4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/operezedutecno/0023Modulo6Sesion4/issues"
+  },
+  "homepage": "https://github.com/operezedutecno/0023Modulo6Sesion4#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

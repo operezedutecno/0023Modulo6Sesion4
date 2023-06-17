@@ -1,0 +1,50 @@
+Nombre: Luke Skywalker
+Color de cabello: blond
+Color de piel: fair
+Color de ojos: blue
+------------------------------------------------
+Nombre: C-3PO
+Color de cabello: n/a
+Color de piel: gold
+Color de ojos: yellow
+------------------------------------------------
+Nombre: R2-D2
+Color de cabello: n/a
+Color de piel: white, blue
+Color de ojos: red
+------------------------------------------------
+Nombre: Darth Vader
+Color de cabello: none
+Color de piel: white
+Color de ojos: yellow
+------------------------------------------------
+Nombre: Leia Organa
+Color de cabello: brown
+Color de piel: light
+Color de ojos: brown
+------------------------------------------------
+Nombre: Owen Lars
+Color de cabello: brown, grey
+Color de piel: light
+Color de ojos: blue
+------------------------------------------------
+Nombre: Beru Whitesun lars
+Color de cabello: brown
+Color de piel: light
+Color de ojos: blue
+------------------------------------------------
+Nombre: R5-D4
+Color de cabello: n/a
+Color de piel: white, red
+Color de ojos: red
+------------------------------------------------
+Nombre: Biggs Darklighter
+Color de cabello: black
+Color de piel: light
+Color de ojos: brown
+------------------------------------------------
+Nombre: Obi-Wan Kenobi
+Color de cabello: auburn, white
+Color de piel: fair
+Color de ojos: blue-gray
+------------------------------------------------
