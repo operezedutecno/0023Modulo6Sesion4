@@ -51,15 +51,37 @@ const axios = require("axios");
     }// Fin eliminación de archivo
 
     //Ejemplo de Proceso Síncrono
+    // for (let index = 1; index <= 10; index++) {
+    //     const personaje = await axios.get(`https://swapi.dev/api/people/${index}`)
+    //     const { name, hair_color, skin_color, eye_color } = personaje.data
+    //     let info = `Nombre: ${name}\n`
+    //     info += `Color de cabello: ${hair_color}\n`
+    //     info += `Color de piel: ${skin_color}\n`
+    //     info += `Color de ojos: ${eye_color}\n`
+    //     info += "------------------------------------------------\n"
+    //     fs.appendFileSync("files/personajes.txt",info,"utf8")
+    // }
+
+    //Ejemplo de Proceso Asíncrono
+    let peticiones = []
     for (let index = 1; index <= 10; index++) {
-        const personaje = await axios.get(`https://swapi.dev/api/people/${index}`)
-        let info = `Nombre: ${personaje.data.name}\n`
-        info += `Color de cabello: ${personaje.data.hair_color}\n`
-        info += `Color de piel: ${personaje.data.skin_color}\n`
-        info += `Color de ojos: ${personaje.data.eye_color}\n`
-        info += "------------------------------------------------\n"
-        fs.appendFileSync("files/personajes.txt",info,"utf8")
+        const personaje = axios.get(`https://swapi.dev/api/people/${index}`)
+        peticiones.push(personaje)
     }
+
+    Promise.all(peticiones).then(resp => {
+        for (const personaje of resp) {
+            const { name, hair_color, skin_color, eye_color } = personaje.data
+            let info = `Nombre: ${name}\n`
+            info += `Color de cabello: ${hair_color}\n`
+            info += `Color de piel: ${skin_color}\n`
+            info += `Color de ojos: ${eye_color}\n`
+            info += "------------------------------------------------\n"
+            fs.appendFileSync("files/personajes.txt",info,"utf8")
+        }
+    })
+
+    
 })()
 
 
